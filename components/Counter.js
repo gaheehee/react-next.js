@@ -1,8 +1,12 @@
 import React from "react";
 
-const Counter = () => 
+const Counter = ({
+    count,
+    onCounterClick
+}) => 
     <div>
-        CounterComponent
+        <p>count : {count}</p>
+        <button onClick={onCounterClick}>increment</button>
     </div>;
 
 export default Counter;
